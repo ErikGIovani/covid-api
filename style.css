@@ -1,0 +1,77 @@
+* { 
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #a1c4fdea 0%, #c2e9fbf5 100%), url(background.png) repeat-y;
+    background-size: cover;
+    animation:fondo 8s linear infinite;
+}
+
+@keyframes fondo {
+    0% { background-position:0 0 }
+    50% { background-position:0 2vw }
+    100% { background-position: 0 0 }
+  }
+
+h1 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;    
+}
+
+img {
+    margin: 4vw 2vw 7vw 2vw;
+    width: 50vw;
+    position: relative;
+    animation-name: covid;
+    animation-duration: 4s;
+    animation-delay: 1ms;
+    animation-iteration-count:infinite;
+  }
+  
+  @keyframes covid {
+    0%   {top:0vw;}
+    50%   {top:3vw;}
+    100%   {top:0vw;}
+  }
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-datos {
+    display: flex;
+}
+
+.contenedor-datos div {
+    display: flex;
+    flex-direction: column;
+    margin: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    color: #736dd9;
+    font-size: 6vw;
+}
+
+.javascript { 
+    text-align: center;
+    font-weight: 900;
+    font-size: 3vw;
+}
+
+.javascript2 { 
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 900;
+}
